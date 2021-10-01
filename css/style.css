@@ -192,10 +192,7 @@ h1
 {
 	background-image: url("../images/restaurants/ledelicedessens.jpg");
 }
-.images
-{
-	
-}
+
 
 .card
 {
@@ -310,9 +307,91 @@ footer
 	font-size: 0.8em;
 }
 
+.footer a
+{
+	text-decoration: none;
+	color: white;
+}
+
 
 
 /*FIN FOOTER*/
+
+
+/*tablette*/
+@media screen and (min-width:768px)
+{
+	.fonctionnement
+	{
+		text-align: center;
+	}
+
+	.fonction
+	{
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+
+	.restaurants h2
+	{
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	.images
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.card
+	{
+		width: 48%;
+	}
+
+	.footer
+	{
+		text-align: center;
+		margin-top: 10px;
+		
+	}
+
+	.footer i
+	{
+		margin-top: 9px;
+	}
+
+	.logo
+	{
+		width: 100%;
+		font-size: 2.2em;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.footer .foot
+	{
+		display: flex;
+		justify-content: center;
+	}
+
+
+
+
+
+
+}
+
+/*desktop*/
+@media screen and (min-width:960px)
+{
+	.images,.fonctionnement
+	{
+		max-width: 1000px;
+		margin: auto;
+	}
+
+}
 
 
 
