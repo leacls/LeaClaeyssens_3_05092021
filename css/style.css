@@ -22,11 +22,12 @@ header .conteneurheader
 
 
 
-h1
+.logoheader
 {
 	object-fit: contain;
 	width: 50%;
 	font-family: 'Shrikhand', cursive;
+	font-size: 2.2em;
 	text-align: center;
 	height: 15px;
 	margin-left: auto;
@@ -75,7 +76,7 @@ h1
 	text-align: center;
 	padding: 20px;
 }
-.explorer h2
+.explorer h1
 {
 	margin-top: 15px;
 	font-size: 1.5em;
