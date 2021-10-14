@@ -4,6 +4,11 @@ body
 	font-family: 'Roboto', sans-serif;
 }
 
+/*main
+{
+	scroll-behavior: smooth;
+}*/
+
 section
 {
 	padding: 20px;
@@ -210,6 +215,12 @@ header .conteneurheader
 	padding-bottom: 10px;
 }
 
+.restaurants a
+{
+	text-decoration: none;
+	color: black;
+}
+
 .card p
 {
 	font-size: 0.9em;
@@ -247,6 +258,48 @@ header .conteneurheader
 	margin-right: 20px;
 	margin-top: 10px;
 	color: grey;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+div.coeurs
+{
+	position: relative;
+}
+
+
+.card .info i.fas
+{
+	opacity: 0;
+}
+
+.card .info i.fas:hover
+{
+	opacity: 1;
+	animation-name: coeur;
+	animation-duration: 0.5s;
+}
+
+@keyframes coeur
+{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
+.card .info i:hover
+{
+	background: -webkit-linear-gradient(to top, #9356DC 10%, #FF79DA 97%);
+	background: -moz-linear-gradient(to top, #9356DC 10%, #FF79DA 97%);
+	background: linear-gradient(to top, #9356DC 10%, #FF79DA 97%);
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /*FIN IMAGES RESTAURANTS*/
@@ -334,8 +387,9 @@ footer
 	opacity: 0;
 	visibility: hidden;
 	justify-content: center;
+	align-items: center;
 	animation-name: fond;
-	animation-duration: 3s;
+	animation-duration: 1s;
 }
 
 @keyframes fond
@@ -345,10 +399,6 @@ footer
 	100%{opacity: 0;}
 }
 
-.overlay .rotate
-{
-	margin-top: 50%;
-}
 
 .overlay i
 {
@@ -357,9 +407,8 @@ footer
 
 .overlay .rotate i
 {
-	margin-top: 50%;
 	animation-name: spinner;
-	animation-duration: 3s;
+	animation-duration: 1s;
 }
 
 @keyframes spinner
@@ -396,7 +445,7 @@ footer
 		justify-content: space-between;
 	}
 
-	.card
+	.images a
 	{
 		width: 48%;
 	}
@@ -441,6 +490,11 @@ footer
 	{
 		max-width: 1000px;
 		margin: auto;
+	}
+
+	.restaurants .card
+	{
+		min-width: 425px;
 	}
 
 }

@@ -73,11 +73,41 @@ h1
 	font-size: 1.6em;
 }
 
+.h1coeur div
+{
+	position: relative;
+}
+
 .h1coeur i
 {
 	font-size: 1.6em;
 	margin-right: 15px;
 	color: grey;
+	position: absolute;
+	right: 0;
+	top: -10px;
+}
+
+.h1coeur i.fas
+{
+	opacity: 0;
+}
+
+@keyframes coeur
+{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+.h1coeur i.fas:hover
+{
+	opacity: 1;
+	animation-name: coeur;
+	animation-duration: 0.5s;
 }
 
 .h1coeur i:hover
@@ -90,6 +120,7 @@ h1
 	-webkit-text-fill-color: transparent;
 }
 
+
 .h1coeur
 {
 	display: flex;
@@ -97,6 +128,9 @@ h1
 	align-items: center;
 	justify-content: space-between;
 }
+
+
+
 /*FIN CONTENEUR H1*/
 
 h2
