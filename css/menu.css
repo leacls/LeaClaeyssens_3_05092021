@@ -80,6 +80,16 @@ h1
 	color: grey;
 }
 
+.h1coeur i:hover
+{
+	background: -webkit-linear-gradient(to top, #9356DC 10%, #FF79DA 97%);
+	background: -moz-linear-gradient(to top, #9356DC 10%, #FF79DA 97%);
+	background: linear-gradient(to top, #9356DC 10%, #FF79DA 97%);
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .h1coeur
 {
 	display: flex;
@@ -95,12 +105,11 @@ h2
 	text-transform: uppercase;
 	color: grey;
 	font-size: 1.1em;
-	margin-top: 35px;
 }
 
-h2.premier
+.categorie
 {
-	margin-top: 0;
+	margin-top: 35px;
 }
 
 .divider
@@ -175,6 +184,7 @@ a.button
 a.button:hover
 {
 	box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.50);
+	opacity: 0.9;
 }
 
 
@@ -229,34 +239,37 @@ footer
 /*tablette*/
 @media screen and (min-width:768px)
 {
-	.logoheader
+	.sousconteneur
 	{
-		margin-right: 150px;
+		max-width: 700px;
+		margin: auto;
 	}
 
-	.h1coeur h1
+	.categorie
 	{
-		margin-left: 500px;
+		display: flex;
+		flex-wrap: wrap;
 	}
 
-	h2,.divider
+	h2
 	{
-		margin-left: 180px;
+		margin-top: 2px;
 	}
 
-	.card
+	.categorie .conteneurtitre
 	{
-		width: 50%;
-		text-align: center;
-		margin-left: 250px;
+		width: 20%;
+	}
+
+	.categorie .conteneurcard
+	{
+		width: 80%;
 	}
 
 
 	.footer
 	{
-		text-align: center;
-		margin-top: 10px;
-		
+		text-align: center;		
 	}
 
 	.footer i
