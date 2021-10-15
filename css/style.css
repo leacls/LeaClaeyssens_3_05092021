@@ -389,7 +389,7 @@ footer
 	justify-content: center;
 	align-items: center;
 	animation-name: fond;
-	animation-duration: 1s;
+	animation-duration: 1.5s;
 }
 
 @keyframes fond
@@ -408,7 +408,7 @@ footer
 .overlay .rotate i
 {
 	animation-name: spinner;
-	animation-duration: 1s;
+	animation-duration: 1.5s;
 }
 
 @keyframes spinner
