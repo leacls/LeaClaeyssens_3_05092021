@@ -167,12 +167,12 @@ h2
 	-webkit-box-shadow: 12px 12px 13px -7px rgba(0,0,0,0.14);
 	-moz-box-shadow: 12px 12px 13px -7px rgba(0,0,0,0.14);
 	text-align: left;
-	padding: 0px 10px;
+	padding: 0px 0px 0px 10px;
 }
 
-.iconesurvol
+.card div:first-child
 {
-	display: none;
+	
 }
 
 .card h3
@@ -193,10 +193,74 @@ h2
 	margin-bottom: 10px;
 }
 
+.iconesurvol
+{
+	background-color: #99E2D0;
+	color: white;
+	height: 70px;
+	width: 0;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.iconesurvol i
+{
+	font-size: 1.3em;
+	opacity: 0;
+
+
+}
+
+.card:hover .iconesurvol
+{
+	animation-name: survolcard;
+	animation-duration: 1s;
+	width: 70px;
+
+}
+
+@keyframes survolcard
+{
+	from{
+		width: 0;
+	}
+	to{
+		width: 70px;
+	}
+}
+
+.card:hover .iconesurvol i
+{
+	animation-name: survolcardi;
+	animation-duration: 1s;
+	opacity: 1;
+
+}
+
+@keyframes survolcardi
+{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+
 .align-center
 {
 	text-align: center;
 }
+
 a.button
 {
 	text-decoration: none;
