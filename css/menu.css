@@ -170,11 +170,6 @@ h2
 	padding: 0px 0px 0px 10px;
 }
 
-.card div:first-child
-{
-	
-}
-
 .card h3
 {
 	margin: 10px;
@@ -186,11 +181,16 @@ h2
 	margin: 10px;
 	font-size: 0.95em;
 	font-weight: 300;
+	width:250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .card span
 {
 	margin-bottom: 10px;
+
 }
 
 .iconesurvol
@@ -212,6 +212,18 @@ h2
 	opacity: 0;
 
 
+}
+.card:hover div p
+{
+	width: 180px;
+}
+
+.card:hover div h3
+{
+	width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .card:hover .iconesurvol
@@ -387,6 +399,11 @@ footer
 	{
 		display: flex;
 		justify-content: center;
+	}
+
+	.card p
+	{
+		width: 330px;
 	}
 
 }
