@@ -146,6 +146,66 @@ h2
 	margin-top: 35px;
 }
 
+.cat1
+{
+	animation-name: cat-un;
+	animation-duration: 2s;
+	position: relative;
+}
+
+@keyframes cat-un
+{
+	from{
+		left:-800px;
+	}
+
+	to{
+		left: 0;
+	}
+}
+
+.cat2
+{
+	animation-name: cat-deux;
+	animation-duration: 2s;
+	animation-delay: 1.5s;
+	position: relative;
+	left: -800px;
+	animation-fill-mode:forwards;
+}
+
+@keyframes cat-deux
+{
+	from{
+		left:-800px;
+	}
+
+	to{
+		left: 0;
+	}
+}
+
+.cat3
+{
+	animation-name: cat-trois;
+	animation-duration: 2s;
+	animation-delay: 3s;
+	position: relative;
+	left: -800px;
+	animation-fill-mode:forwards;
+}
+
+@keyframes cat-trois
+{
+	from{
+		left:-800px;
+	}
+
+	to{
+		left: 0;
+	}
+}
+
 .divider
 {
 	border-top: 3px solid #99E2D0;
