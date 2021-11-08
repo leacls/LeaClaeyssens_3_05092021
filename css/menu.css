@@ -161,60 +161,69 @@ h2
 .cat1
 {
 	animation-name: cat-un;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	position: relative;
+	opacity: 1;
 }
 
 @keyframes cat-un
 {
 	from{
-		left:-800px;
+		bottom:-50px;
+		opacity: 0;
 	}
 
 	to{
-		left: 0;
+		bottom: 0;
+		opacity: 1;
 	}
 }
 
 .cat2
 {
 	animation-name: cat-deux;
-	animation-duration: 2s;
-	animation-delay: 1.5s;
+	animation-duration: 1.5s;
+	animation-delay: 1s;
 	position: relative;
-	left: -800px;
+	bottom: -50px;
+	opacity: 0;
 	animation-fill-mode:forwards;
 }
 
 @keyframes cat-deux
 {
 	from{
-		left:-800px;
+		bottom:-50px;
+		opacity: 0;
 	}
 
 	to{
-		left: 0;
+		bottom: 0;
+		opacity: 1;
 	}
 }
 
 .cat3
 {
 	animation-name: cat-trois;
-	animation-duration: 2s;
-	animation-delay: 3s;
+	animation-duration: 1.5s;
+	animation-delay: 2s;
 	position: relative;
-	left: -800px;
+	bottom: -50px;
+	opacity: 0;
 	animation-fill-mode:forwards;
 }
 
 @keyframes cat-trois
 {
 	from{
-		left:-800px;
+		bottom:-50px;
+		opacity: 0;
 	}
 
 	to{
-		left: 0;
+		bottom: 0;
+		opacity: 1;
 	}
 }
 
@@ -245,12 +254,14 @@ h2
 .card h3
 {
 	margin: 10px;
-	font-size: 1.1em;
+	margin-right: 0;
+	font-size: 1em;
 }
 
 .card p
 {
 	margin: 10px;
+	margin-right: 0;
 	font-size: 0.95em;
 	font-weight: 300;
 	width:250px;
@@ -285,14 +296,20 @@ h2
 
 
 }
+
+.card:hover div
+{
+	width: calc(100% - 120px);
+}
+
 .card:hover div p
 {
-	width: 180px;
+	width: 100%;
 }
 
 .card:hover div h3
 {
-	width: 180px;
+	width: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -319,7 +336,7 @@ h2
 .card:hover .iconesurvol i
 {
 	animation-name: survolcardi;
-	animation-duration: 1s;
+	animation-duration: 0.5s;
 	opacity: 1;
 
 }
@@ -328,17 +345,13 @@ h2
 {
 	from{
 		opacity: 0;
+		transform: rotate(0deg);
 	}
 	to{
 		opacity: 1;
+		transform: rotate(360deg);
 	}
 }
-
-
-
-
-
-
 
 .align-center
 {
